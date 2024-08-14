@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade PDT</title>
+    <style>
+        body{
+            font: normal 20px Arial;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1> 
+    <div id="resp">Resposta:</div> 
+    
+    <script>
+        var n1 = Number(prompt('digite um número'))
+        var n2 = Number(prompt('digitre o segundo número'))
+        var res = document.getElementById('resp')
+        var soma = n1 + n2
+        var sub = n1 - n2
+        var mult = n1*n2
+        var div = n1/n2
+        var rest = n1%n2
+        res.innerHTML= `Soma: ${soma}</br>Subtração ${sub}</br>
+                        Multiplicação:  ${mult}</br>
+                        Divisão ${div}</br>
+                        Resto ${rest}`
+    </script>
+</body>
+</html>

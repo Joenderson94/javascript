@@ -1,0 +1,22 @@
+header{
+    font: normal 30px Comic;
+    text-align: center;
+    background-color: rgb(143, 240, 240);
+}
+section{
+    font: normal 20px Arial;
+    background-color: bisque;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px;    
+}
+footer{
+    text-align: center;
+    color: azure;
+}
+body{
+    background-color: blueviolet;
+}

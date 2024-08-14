@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 07</title>
+</head>
+<body>
+    <input type="text" name="string" id="string" placeholder="string">
+    <input type="number" name="num" id="num" placeholder="número">
+    <input type="button" value="Testar" onclick="verifica()">
+    <div id="resp"></div>
+    <script>
+       function verifica(){
+        var str = document.getElementById('string')
+        var n = document.getElementById('num')
+        var n1= Number(n.value)
+        var res = document.getElementById('resp')
+         
+        if(str == n1){
+            res.innerText = 'valor igual'
+        } else if(str === n1){
+            res.innerText = 'IDENTICO'
+        } else{
+            res.innerText = 'Diferentes'
+        }
+    }
+    </script>
+</body>
+</html>

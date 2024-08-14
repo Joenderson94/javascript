@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(228, 156, 156);
+}
+section{
+    background-color: blanchedalmond;
+    width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    padding: 300px;
+    font-size:xx-large;
+}
+div#resp{
+    padding: 5px;
+    width: fit-content;
+    margin: auto;
+}
+header{
+    text-align: center;
+    font: normal 50px Arial;
+}
+footer{
+    text-align: center;
+}

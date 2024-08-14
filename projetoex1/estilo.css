@@ -1,0 +1,55 @@
+body{
+    margin-top: 10%;
+}
+section{
+    background-color: rgb(156, 142, 221);
+    width: 500px;
+    height: 600px;
+    margin: auto;    
+    border-radius: 20px;
+}
+
+p#title{ 
+    padding-top: 5%;   
+    font: normal 30px Arial;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+p#linha{    
+    background-color: black;
+    height: 5px;
+}
+
+div#in{
+    font: normal 20px Arial;
+    padding: 10%;
+    text-align: center;
+}
+input{
+    height: 30px;
+    width: 100px;
+}
+
+input#botao{
+    font: normal 20px Arial;
+    width: 180px;
+}
+
+div#resp{
+    
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    padding: 5%;    
+    border-radius: 10px;
+    font: normal 30px Arial;
+}
+input#botao{
+    background-color: black;
+    color: rgb(119, 117, 223);
+}
+footer{
+    text-align: center;
+}

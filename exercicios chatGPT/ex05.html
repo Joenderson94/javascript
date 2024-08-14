@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade YT</title>
+    <style>
+        body{
+            font: normal 20px Arial;
+        }
+        div#resp{
+            font: normal 35px Aria;
+            margin-top: 20px;
+            width: 177px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+ Atividade video do Youtube aula1 Condições
+    <h1> Atividade Nacionalidade</h1>
+    <input type="text"  id="texto">
+    <button onclick="nacionalidade()">Verificar</button>
+    <div id="resp"></div>
+    <script>
+        function nacionalidade(){
+            var nac = document.querySelector('input#texto')
+            var rpt = document.querySelector('div#resp')
+            var valortxt = nac.value
+            if (valortxt == "Brasileiro"){
+                rpt.innerHTML='é Brasileiro!'
+                rpt.innerHTML += 'isso ai'
+                
+            }else{
+                rpt.innerHTML='é estrangeiro'
+                
+                rpt.style.width = "180px"
+            }
+        }
+    </script>
+</body>
+</html>

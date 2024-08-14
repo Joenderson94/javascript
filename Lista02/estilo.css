@@ -1,0 +1,19 @@
+section{
+    background-color: bisque;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    font: 20px normal Arial;
+    border-radius: 10px;
+    padding: 100px;
+}
+footer{
+    text-align: center;        
+}
+input{
+    width: 100px;
+}
+header{
+    font: normal 20px Arial;
+    text-align: center;
+}

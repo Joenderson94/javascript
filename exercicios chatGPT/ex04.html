@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04 GPT</title>
+    <style>
+        body{
+            font: normal 20px Arial;
+            background-color: aqua;
+        }
+        #resultado{
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: lightyellow;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+     Crie um script que realize operações aritméticas básicas e exiba os resultados no console.
+
+     <h1>Digite os valores abaixo:</h1>     
+     <input type="number" id="n1"> +
+     <input type="number" id="n2">
+     <button onclick="calcular()"> Calcular</button>
+     <div id="resultado"></div>
+     
+     <script>
+
+        function calcular(){
+            var n1 = Number(document.getElementById('n1').value)
+            var n2 = Number(document.getElementById('n2').value)
+            var soma = n1 + n2
+            var sub = n1 - n2
+            var mult = n1 * n2
+            var div = n1/n2
+
+            var res = document.getElementById('resultado')
+
+            res.innerHTML= `
+                soma= ${soma}<br>
+                sub = ${sub}<br>
+                mult = ${mult}<br>
+                div = ${div}<br>
+            `
+        }     
+
+     </script>
+    
+</body>
+</html>
