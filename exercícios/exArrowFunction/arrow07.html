@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatorial</title>
+</head>
+<body>
+    <script>
+        const fat = (x) => {
+            if(x<0) return "Fatorial não definida"
+            let num = 1;
+            for(let n=1 ; n <= x; n++){
+                num*=n;
+            }
+            return num;
+        }
+        console.log(fat(5))
+        console.log(fat(-5))
+    </script>
+</body>
+</html>
