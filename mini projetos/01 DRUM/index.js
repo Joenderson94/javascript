@@ -22,4 +22,32 @@ const criarDiv = (texto) => {
 
 const exibir = (sons) => Object.keys(sons).forEach(criarDiv);
  
-exibir(sons)
+const tocarSom = (letra) => {
+    const audio = new Audio(`./sounds/${sons[letra]}`);    
+    audio.play();
+
+}
+
+const adicionarEfeito = (letra) => document.getElementById(letra)
+                                           .classList.add('active');
+
+const removeEfeito = (letra) => {
+    const div = document.getElementById(letra);
+    const removeActive = () => div.classList.remove('active');
+    div.addEventListener('transitionend', removeActive);
+}
+
+const ativarDiv = (evento) => {
+    const letra = evento.target.id;
+    const letraPermitida = sons.hasOwnProperty(letra);
+    if(letraPermitida){
+        adicionarEfeito(letra);
+        tocarSom(letra);
+        removeEfeito(letra);
+    }
+}
+
+exibir(sons);
+
+document.getElementById('container')
+        .addEventListener('click', ativarDiv);
