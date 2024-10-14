@@ -13,19 +13,18 @@ const sons = {
 }
 
 const criarDiv = (texto) => {
-    const div = document.createElement('div')
-    div.classList.add('key');
-    div.textContent = texto;
-    div.id = texto;
-    document.getElementById('container').appendChild(div);
+    const div = document.createElement('div')   // <div> </div>
+    div.classList.add('key');                   // <div class ="key"></div>
+    div.textContent = texto;                    // <div class ="key"></div>
+    div.id = texto;                             // <div class = key id="A"></div>
+    document.getElementById('container').appendChild(div); // coloca a div criada dentro da div container 
 }
-
 const exibir = (sons) => Object.keys(sons).forEach(criarDiv);
  
 const tocarSom = (letra) => {
     const audio = new Audio(`./sounds/${sons[letra]}`);    
     audio.play();
-
+    
 }
 
 const adicionarEfeito = (letra) => document.getElementById(letra)
@@ -58,4 +57,4 @@ exibir(sons);
 document.getElementById('container')
         .addEventListener('click', ativarDiv);
 
-window.addEventListener('keydown', ativarDiv)
+window.addEventListener('keydown', ativarDiv);
