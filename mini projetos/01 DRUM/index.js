@@ -1,4 +1,4 @@
-'use strict' ;
+'use strict';
 
 const sons = {
     'A': 'boom.wav',
@@ -12,17 +12,21 @@ const sons = {
     'L': 'tom.wav'
 }
 
-const criarDiv = (texto) => {
+const criarDiv = (texto) => {                   // 01
     const div = document.createElement('div')   // <div> </div>
     div.classList.add('key');                   // <div class ="key"></div>
     div.textContent = texto;                    // <div class ="key"></div>
     div.id = texto;                             // <div class = key id="A"></div>
     document.getElementById('container').appendChild(div); // coloca a div criada dentro da div container 
 }
-const exibir = (sons) => Object.keys(sons).forEach(criarDiv);
+const exibir = (sons) => Object.keys(sons).forEach(criarDiv); // 02
+                                                              //Object.keys(sons) vai pegas todas as keys 
+                                                              // que são as letras antes do 2 pontos
+                                                              //.forEach vai passar por cada uma chamando
+                                                              // a função criarDiv, criando todas letras
  
-const tocarSom = (letra) => {
-    const audio = new Audio(`./sounds/${sons[letra]}`);    
+const tocarSom = (letra) => {                               // 04
+    const audio = new Audio(`./sounds/${sons[letra]}`);     // 
     audio.play();
     
 }
@@ -36,10 +40,10 @@ const removeEfeito = (letra) => {
     div.addEventListener('transitionend', removeActive);
 }
 
-const ativarDiv = (evento) => {
-    let letra = '';
+const ativarDiv = (evento) => {                 //03
+    let letra = '';                             //
         if(evento.type == 'click'){
-            letra = evento.target.id;
+            letra = evento.target.id;           //armazena na variável a letra clicada target.id pelo id
         }else{
             letra = evento.key.toUpperCase();
         }
