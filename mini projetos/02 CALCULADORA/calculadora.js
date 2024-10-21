@@ -50,13 +50,18 @@ numeros.forEach(numero => numero.addEventListener('click',inserirNumero));
 const selecionarOperador = (evento) => {
     if(!novoNumero){
         calcular();
+        console.log(numeroAnterior)
         novoNumero = true;
         operador = evento.target.textContent;
         numeroAnterior = parseFloat(display.textContent);
-        console.log(operador)
+        
     }
 
 }
 operadores.forEach( operador => operador.addEventListener('click', selecionarOperador));
 
-
+const resultado = () => {
+    calcular();
+    operador = undefined;
+}
+document.getElementById('igual').addEventListener('click', resultado)
